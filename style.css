@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../animation/photo/Butterfly2.jpg);
+    
+}
+.navbar-style{
+    height: 50px;
+    box-shadow:1px 1px rgb(62, 14, 236);
+    background-color: rgba(19, 49, 221, 0.384);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.navbar-header img{
+    height: 50px;
+    width: 90px;
+    border-radius: 70px;
+}
+button{
+    background: transparent;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-style: oblique;
+    outline:none;
+}
+.content{
+    color: white;
+    margin: 90px;
+    padding: 50px;
+    font-style: oblique;
+}
+h1{
+    font-size: 50px;
+}
+h1 span{
+    color: red;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom:-20px;
+}
+.bubbles img{
+    width: 120px;
+    animation: bubbles 5s linear infinite;
+}
+@keyframes bubbles{
+    0%{
+       
+       opacity: 0; 
+    }
+    25%{ 
+        opacity: 1;  
+     }
+     50%{
+         opacity: 1; 
+     }
+     75%{
+        opacity: 1;
+        animation-delay: 1s;
+     }
+     100%{
+        transform: translateY(-150vh);
+        opacity: 0;
+     }
+
+}
+.bubbles img:nth-child(1){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1.5s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 2.5s;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3.2s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 2.8s;
+}
+.bubbles img:nth-child(8){
+    animation-delay: 1s;
+}
